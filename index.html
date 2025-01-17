@@ -6,8 +6,8 @@
     <title>Gaming Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="bg-[url('/img/banner-bg.jpg')] h-screen rounded-b-3xl w-full bg-cover bg-center">
+<body class="bg-gray-100">
+    <div class="bg-[url('/img/banner-bg.jpg')] h-auto rounded-b-3xl w-full ">
         <header>
         <nav class="flex justify-between items-center  text-white mx-12">
             <div class="mt-6">
@@ -26,17 +26,54 @@
        
     </header>
 
-    <div class="grid grid-cols-2 gap-80 text-white px-6 py-12">
-        <div class="">
-            <h2 class="text-xl font-semibold">Welcom TO LUGX</h2>
-            <h2 class="text-4xl font-bold">BEST GAMING SITE EVER!</h2>
-            <P>LUGX is a free Bootstrap 5 HTML CSS website templet for your gaming websites. You can download and use this layout for commercial purpose. Please tell your friends about TempletMo</P>    
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white px-6 py-12">
+        <div class="flex flex-col m-10">
+            <h2 class="text-xl font-semibold">Welcome TO LUGX</h2>
+            <h2 class="text-5xl font-bold mt-5">BEST GAMING SITE EVER! 
+                <img class="ml-20" src="/img/caption-dec.png" alt="">
+            </h2>
+            <p class="mt-20 text-gray-100 leading-relaxed">
+                LUGX is a free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
+            </p>
+            <div class="mt-10">
+            <input class="rounded-l-full w-96 p-4 -m-2" type="text" placeholder="Type somthing">
+            <button class="bg-red-400 w-32  p-4 rounded-full -m-6 ">search</button>
+            </div>
+            
         </div>
-        <div class="flex place-items-center ">
-            <img class="m-6 object-cover rounded-xl object-center" src="/img/banner-image.jpg" alt="">
+        <div class="relative justify-center items-center ml-52 ">
+            <img class="max-w-sm object-cover rounded-2xl object-center" src="/img/banner-image.jpg" alt="Gaming Banner ">
+            <button class="absolute w-20 top-4 left-72 text-2xl font-bold bg-blue-600 rounded-2xl p-2">$22</button>
+            <button class="absolute -bottom-4 bg-red-400 w-24 h-24 -left-8 rounded-[50%] p-4 text-3xl">-40%</button>
         </div>
-    </div>
-    </div>
+    </section>
     
+    </div>
+    <div class="flex justify-center items-center gap-7 mx-auto p-10 -translate-y-1/3">
+        <div class="grid justify-center bg-white w-52 h-44 rounded-xl">
+            <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
+                <img class="w-10 h-10" src="/img/featured-01.png" alt="">
+            </button>
+            <p class="font-bold">GREE STORAGE</p>
+        </div>
+        <div class="grid justify-center bg-white w-52 h-44 rounded-xl">
+            <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
+                <img class="w-10 h-10" src="/img/featured-02.png" alt="">
+            </button>
+            <p class="font-bold">USER MORE</p>
+        </div>
+        <div class="grid justify-center bg-white w-52 h-44 rounded-xl">
+            <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
+                <img class="w-10 h-10" src="/img/featured-03.png" alt="">
+            </button>
+            <p class="font-bold">REPLY READY</p>
+        </div>
+        <div class="grid justify-center bg-white w-52 h-44 rounded-xl">
+            <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
+                <img class="w-10 h-10" src="/img/featured-04.png" alt="">
+            </button>
+            <p class="font-bold">EASY LAYOUT</p>
+        </div>
+    </div>
 </body>
 </html>
