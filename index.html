@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-[url('/img/banner-bg.jpg')] h-auto rounded-b-3xl w-full ">
+    <div class="bg-[url('/img/banner-bg.jpg')] h-auto rounded-b-[150px] w-full ">
         <header>
             <nav class="flex items-center sticky top-10 justify-between  text-white px-12 py-4">
             <div class="mt-6">
@@ -78,6 +78,7 @@
         <div>
             <p class="text-red-400 font-bold absolute left-16 -mt-20">TRENDING</p>
         <h1 class="text-3xl font-black absolute left-16 -mt-10">TRENDING GAMES</h1>
+        <button class="text-white p-2 bg-red-500 rounded-3xl absolute right-16 w-24 -top-11 ">VIEW ALL</button>
         </div>
         
         <div class="flex justify-center items-center gap-7 mx-auto p-10 ">
@@ -85,27 +86,14 @@
                 <button class="rounded-xl">
                     <img class="rounded-xl" src="/img/trending-01.jpg" alt="">
                 </button>
-                <p>A</p>
+                <p class="text-white absolute top-4 right-2 rounded-2xl w-20 flex flex-col items-center justify-center bg-blue-500 p-2">
+                    <span class="line-through text-sm opacity-75">$28</span>
+                    <span class="font-bold text-lg">$20</span>
+                </p>                
+                <p class="absolute left-24 bottom-14">Action</p>
                 <p class="font-bold absolute left-20 bottom-5">Assasin Creed</p>
             </div>
-            <div class="grid justify-center bg-white w-52 h-44 rounded-xl shadow-lg">
-                <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
-                    <img class="w-10 h-10" src="/img/featured-02.png" alt="">
-                </button>
-                <p class="font-bold">USER MORE</p>
-            </div>
-            <div class="grid justify-center bg-white w-52 h-44 rounded-xl shadow-lg">
-                <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
-                    <img class="w-10 h-10" src="/img/featured-03.png" alt="">
-                </button>
-                <p class="font-bold">REPLY READY</p>
-            </div>
-            <div class="grid justify-center bg-white w-52 h-44 rounded-xl shadow-lg">
-                <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
-                    <img class="w-10 h-10" src="/img/featured-04.png" alt="">
-                </button>
-                <p class="font-bold">EASY LAYOUT</p>
-            </div>
+            
         </div>
     </div>
 </body>
