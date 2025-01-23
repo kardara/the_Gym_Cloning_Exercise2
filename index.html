@@ -7,46 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-[url('/img/banner-bg.jpg')] h-auto rounded-b-[150px] w-full ">
-        <header>
-            <nav class="flex items-center top-10 justify-between  text-white px-12 py-4">
-            <div class="mt-6">
-                <img src="/img/logo.png" alt="">
-            </div>
-            <div class=" flex items-center mt-6">
-                <ul class="flex space-x-6">
-                    <li><a class="bg-blue-500 rounded-2xl p-2" href="#">Home</a></li>
-                    <li><a class="hover:bg-blue-500 rounded-2xl p-2" href="#">Our Shop</a></li>
-                    <li><a class="hover:bg-blue-500 rounded-2xl p-2" href="#">Product Details</a></li>
-                    <li><a class="hover:bg-blue-500 rounded-2xl p-2" href="#">Contact Us</a></li>
-                    <button class=" bg-red-500 font-bold px-4 rounded-2xl  p-1">Sign in</button>
-                </ul>
-        </nav>
-    </header>
-
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white px-6 py-12">
-        <div class="flex flex-col m-10">
-            <h2 class="text-xl font-semibold">Welcome TO LUGX</h2>
-            <h2 class="text-5xl font-bold mt-5">BEST GAMING SITE EVER! 
-                <img class="ml-20" src="/img/caption-dec.png" alt="">
-            </h2>
-            <p class="mt-20 text-gray-100 leading-relaxed">
-                LUGX is a free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
-            </p>
-            <div class="mt-10">
-            <input class="rounded-l-full w-96 p-4 -m-2" type="text" placeholder="Type somthing">
-            <button class="bg-red-400 w-32  p-4 rounded-full -m-6 ">search</button>
-            </div>
-            
-        </div>
-        <div class="relative justify-center items-center ml-52 ">
-            <img class="max-w-sm object-cover rounded-2xl object-center" src="/img/banner-image.jpg" alt="Gaming Banner ">
-            <button class="absolute w-20 top-4 left-72 text-2xl font-bold bg-blue-600 rounded-2xl p-2">$22</button>
-            <button class="absolute -bottom-4 bg-red-400 w-24 h-24 -left-8 rounded-[50%] p-4 text-3xl">-40%</button>
-        </div>
-    </section>
+    <div class="bg-[url('/img/banner-bg.jpg')] h-[800px] rounded-b-[150px] w-full">
+        <!-- Header -->
+        <header class="fixed w-full mb-10 bg-blue-600 z-50">
+            <nav class="flex items-center justify-between text-white px-12 py-4">
+                <!-- Logo -->
+                <div class="mt-6">
+                    <img src="/img/logo.png" alt="Logo">
+                </div>
     
+                <!-- Navigation Links -->
+                <div class="flex items-center mt-6">
+                    <ul class="flex space-x-6">
+                        <li><a class="bg-blue-500 rounded-2xl p-2" href="#">Home</a></li>
+                        <li><a class="hover:bg-blue-500 rounded-2xl p-2" href="#">Our Shop</a></li>
+                        <li><a class="hover:bg-blue-500 rounded-2xl p-2" href="#">Product Details</a></li>
+                        <li><a class="hover:bg-blue-500 rounded-2xl p-2" href="#">Contact Us</a></li>
+                    </ul>
+                    <!-- Sign In Button -->
+                    <button class="ml-6 bg-red-500 font-bold px-4 py-1 rounded-2xl">Sign in</button>
+                </div>
+            </nav>
+        </header>
+    
+        <!-- Main Section -->
+        <section class="grid  grid-cols-2 gap-6 text-white px-6 py-12 pt-28">
+            <!-- Text Content -->
+            <div class="flex flex-col m-10">
+                <h2 class="text-xl font-semibold">Welcome TO LUGX</h2>
+                <h2 class="text-5xl font-bold mt-5">
+                    BEST GAMING SITE EVER!
+                    <img class="ml-20" src="/img/caption-dec.png" alt="">
+                </h2>
+                <p class="mt-20 text-gray-100 leading-relaxed">
+                    LUGX is a free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
+                </p>
+                <!-- Search Input -->
+                <div class="mt-10 flex">
+                    <input 
+                        class="rounded-l-full w-96 p-4" 
+                        type="text" 
+                        placeholder="Type something" 
+                        aria-label="Search">
+                    <button 
+                        class="bg-red-400 w-32 p-4 rounded-r-full text-white font-semibold" 
+                        aria-label="Search">
+                        Search
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Image Section -->
+            <div class="relative flex justify-center items-center">
+                <img class="max-w-sm object-cover rounded-2xl object-center" src="/img/banner-image.jpg" alt="Gaming Banner">
+                <!-- Price Button -->
+                <button class="absolute w-20 top-4 right-32 text-2xl font-bold bg-blue-600 rounded-2xl p-2">$22</button>
+                <!-- Discount Button -->
+                <button class="absolute -bottom-1 bg-red-400 w-24 h-24 left-14 rounded-full text-3xl flex items-center justify-center">-40%</button>
+            </div>
+        </section>
     </div>
+    
     <div class="flex justify-center items-center gap-7 mx-auto p-10 -translate-y-1/3">
         <div class="grid justify-center bg-white w-52 h-44 rounded-xl shadow-lg">
             <button class="grid mt-4 justify-center items-center bg-blue-600 w-24 h-24 hover:bg-red-400  rounded-[50%]">
@@ -284,16 +305,29 @@
         </div>
     </div>
 
-    <div class="m-36 relative">
+    <div class="m-40 relative">
         <div class="flex justify-center" >
             <img class="rounded-3xl w-[500px]" src="/img/cta-bg.jpg" alt="">
         </div>
         <div class="bg-gray-200 p-20 rounded-2xl w-[400px] h-[450px] absolute top-20">
-
+            <div class="-mt-10">
+                <p class="text-red-600 font-bold">OUR SHOP</p>
+            <H1 class="mt-8 font-bold text-4xl">Go Pre-Order Buy & Get Best <span class="text-blue-500">Prices</span> For You </H1>
+            <p class="mt-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eaque!</p>
+            <button class="bg-red-400 p-2 rounded-2xl w-40 mt-6 text-white">SHOP NOW</button>
+            </div>
+            
         </div>
 
-        <div class="bg-gray-200 p-20 rounded-2xl w-[300px] h-[350px] absolute top-44 right-20">
-
+        <div class="bg-gray-200 p-20 rounded-2xl w-[350px] h-[350px] absolute top-44 right-20">
+                <div class="absolute left-5 -mt-10">
+                    <p class="text-red-600 font-bold">NEWSLETTER</p>
+                    <h1 class="mt-5 text-3xl font-bold">Get Up To $100 Off Just Buy <span class="text-blue-500">Subscribe</span> Newsletter!</h1>
+                    <div class="mt-5">
+                        <input class="rounded-l-full  p-2" type="email" placeholder="Your email...">
+                        <button class="bg-red-400 text-sm w-36 h-11 text-white font-bold p-2 rounded-full -m-8 ">SUBSCRIBE NOW</button>
+                        </div>
+                </div>
         </div>
     </div>
 </body>
